@@ -10,24 +10,56 @@
         <p id="description">By filling out this form you are contributing to the cure for COVID-19</p>
         <form id="survey-form">
             <label id="name-label" for="name">Name</label>
-            <input type="text" id="name" required placeholder="John Doe">
+            <input type="text" id="name" required placeholder="John Doe"/>
 
             <label id="email-label" for="email">Email</label>
-            <input type="email" id="email" required placeholder="foo@bar.xyz">
+            <input type="email" id="email" required placeholder="foo@bar.xyz"/>
 
             <label id="number-label" for="number">Age (optional)</label>
-            <input type="number" id="number" min="13" max="99" placeholder="13 or older">
+            <input type="number" id="number" min="13" max="99" placeholder="13 or older"/>
 
-            <select>
+            <label id="dropdown-label" for="dropdown">Which car sound do you recognize best?</label>
+            <select id="dropdown">
                 <option value="" disabled selected>Choose a model</option>
                 <option value="r34">Nissan GTR R-34</option>
                 <option value="lfa">Lexus LFA</option>
                 <option value="supra">Toyota Supra</option>
                 <option value="demon">Dodge Demon</option>
                 <option value="hellcat">Dodge Hellcat</option>
-                <option value="tesla">Tesla Model S</option>
+                <option value="tesla">Tesla Model S (Just kidding!)</option>
             </select>
-            <button type="submit">Submit</button>
+
+            <p>Which do you prefer?</p>
+            <label for="jdm">
+                JDM
+                <input type="radio" id="jdm" name="make" value="jdm"/>
+            </label>
+            <label for="muscle">
+                MUSCLE
+                <input type="radio" id="muscle" name="make" value="muscle"/>
+            </label>
+
+            <p>Which of these do you consider essential to a car's performance? (Check all that apply)</p>
+            
+            <input type="checkbox" id="turbo" value="turbo" name="tune-ups"/>
+            <label for="turbo">Turbo</label>
+            
+            <input type="checkbox" id="ecu" value="ecu" name="tune-ups"/>
+            <label for="ecu">ECU</label>
+            
+            <input type="checkbox" id="intake" value="intake" name="tune-ups"/>
+            <label for="intake">Intake</label>
+            
+            <input type="checkbox" id="nos" value="nos" name="tune-ups"/>
+            <label for="nos">NOS</label>
+            
+            <input type="checkbox" id="ignition" value="ignition" name="tune-ups"/>
+            <label for="ignition">Ignition system</label>
+
+            <label for="comments">Let us know what a perfect drive would be like</label>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+            <button id="submit" type="submit">Submit</button>
         </form>
     </body>
 </html>
