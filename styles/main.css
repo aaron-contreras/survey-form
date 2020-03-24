@@ -1,0 +1,94 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 50px;
+}
+header {
+    text-align: center;
+    margin: 50px;
+}
+em {
+    font-style: italic;
+}
+label, .subtitle {
+    padding-bottom: 0.5em;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+#color {
+    background-color: rgba(252, 154, 5, 0.7);
+    z-index: -2;
+}
+#black {
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+#flex-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 60%;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+
+#background {
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: -3;
+    filter: blur(8px);
+}
+
+
+#survey-form {
+    display: inherit;
+    flex-direction: column;
+}
+.form-group {
+    display: inherit;
+    flex-direction: inherit;
+    margin-bottom: 25px;
+}
+
+#submit {
+    padding: 15px;
+    background-color: #0446FE;
+}
+input, button, select,   textarea{
+    padding: 0.25em;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+}
+button {
+    color: inherit;
+    font-weight: bold;
+}
+textarea {
+    resize: none;
+}
+
+
