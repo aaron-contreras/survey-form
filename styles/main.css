@@ -31,7 +31,8 @@ label, .subtitle {
     
 }
 #color {
-    background-color: rgb(207, 105, 10, 0.8);
+    background-color: slateblue;
+    opacity: 0.7;
     z-index: -2;
 }
 #black {
@@ -74,7 +75,7 @@ label, .subtitle {
 
 #submit {
     padding: 15px;
-    background-color: #0446FE;
+    background-color: orange;
 }
 input, button, select,   textarea{
     padding: 0.25em;
